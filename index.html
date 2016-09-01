@@ -5,11 +5,12 @@
 
     <!-- Bootstrap and CSS here-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   </head>
   <body>
 
-      <div id='app' class='center'>
+      <div id='app' class='center container'>
 
         <div id='headers'>
           <h1 id='title'>Guessing Game!</h1>
@@ -19,22 +20,23 @@
         <div id='main'>
           <div id='input-parent'>
             <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
-            <button>Go!</button>
+            <button id='submit' class='btn btn-success'>Go!</button>
           </div>
 
           <div id='guesses'>
-            <ul class='guess-list'>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
             </ul>
           </div>
 
+
           <div id="menu-btns">
-            <button type="button" >Reset</button>
-            <button type="button" >Hint</button>
+            <button id='reset' class='btn btn-warning'>Reset</button>
+            <button id='hint' class='btn btn-info'>Hint</button>
           </div>
         </div>
       </div>
@@ -42,16 +44,16 @@
 
 
     <div id='footer' class='center'>
-        <div>
-          <div class=''>
+        <div class='row'>
+          <div class='col-sm-4'>
             <img src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <h4>Project by Joshua Goldmeier</h4>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='grace_hopper_academy.png'></img>
           </div>
 
